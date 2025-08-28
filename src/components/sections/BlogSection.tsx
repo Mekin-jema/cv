@@ -13,12 +13,34 @@ interface Experience {
   duration: string;
   description: string;
   skills: string[];
+  github: string;
 }
 
 export default function ExperienceSection() {
   const [experiences, setExperiences] = useState<Experience[]>([]);
   const [loading, setLoading] = useState(true);
 const dummyExperiences: Experience[] = [
+{
+  title: "Multi-Store Delivery & E-Commerce Platform",
+  company: "Information Network Security Administration (INSA)",
+  location: "Addis Ababa, Ethiopia",
+  duration: "Apr 2025 – Present",
+  description:
+    "Building a scalable multi-vendor delivery and e-commerce platform with real-time tracking, smart discovery, group ordering, and local payment integration (Chapa).",
+  skills: [
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "MapLibre GL",
+    "Chapa Payment API",
+    "Docker",
+    "Zod",
+    "SQLite"
+  ],
+  github: "https://github.com/zestdev/multi-store-delivery",
+}
+,
   {
     title: "Frontend Engineer",
     company: "Ambalay Maps",
@@ -36,6 +58,7 @@ const dummyExperiences: Experience[] = [
       "OpenMapTiles",
       "Valhalla",
     ],
+    github: "https://github.com/zestdev/ambalay-maps",
   },
   {
     title: "Youth Advisory Group (YAG) Member – e-SHE Program",
@@ -51,6 +74,7 @@ const dummyExperiences: Experience[] = [
       "Digital Transformation",
       "Collaboration",
     ],
+    github: "",
   },
   {
     title: "Member – AAU Robotics Team '5K Bots'",
@@ -65,6 +89,7 @@ const dummyExperiences: Experience[] = [
       "Embedded Systems",
       "Problem-Solving",
     ],
+    github: "",
   },
   {
     title: "Web Developer Intern",
@@ -74,6 +99,7 @@ const dummyExperiences: Experience[] = [
     description:
       "Developed an import management website with HS code tools. Collaborated with audio hardware company and gained insight into manufacturing processes.",
     skills: ["Web Development", "JavaScript", "Database Integration", "UI/UX"],
+    github: "https://github.com/zestdev/ministry-industry-web",
   },
   {
     title: "React Module Instructor",
@@ -89,6 +115,7 @@ const dummyExperiences: Experience[] = [
       "Mentorship",
       "State Management",
     ],
+    github: "https://github.com/zestdev/react-course-materials",
   },
 ];
 
@@ -172,14 +199,7 @@ const dummyExperiences: Experience[] = [
               </div>
             </CardContent>
 
-            <CardFooter>
-              <Button variant="outline" className="w-full group gap-2"> 
-              
-                <Github className="h-4 w-4 " />
-                  Link to Project
-                <Code className="ml-2 h-4 w-4  group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </CardFooter>
+       
           </Card>
         ))}
       </div>
