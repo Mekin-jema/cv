@@ -10,6 +10,8 @@ import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
+import MarqueeDemo from './components/sections/MarqueeDemo';
+import AnimatedSection from './components/sections/AnimatedSection';
 
 function AppContent() {
   const { theme, setTheme } = useTheme();
@@ -75,7 +77,7 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-background/50 text-foreground transition-colors duration-300 relative">
+    <div className="min-h-screen bg-background/50 text-foreground transition-colors max-w-[2000] mx-auto duration-300 relative">
       <Squares 
         speed={0.3} 
         squareSize={40}
@@ -101,6 +103,11 @@ function AppContent() {
         <div id="blog">
           <BlogSection />
         </div>
+        <AnimatedSection>
+
+          <MarqueeDemo />
+        </AnimatedSection>
+     
         <ContactSection />
       </main>
 

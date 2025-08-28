@@ -4,7 +4,7 @@ import { skills } from '@/data/skills';
 import { aboutContent } from '@/data/about';
 
 export function AboutSection() {
-  return (
+  return (   
     <section id="about" className="scroll-mt-16">
       <h2 className="text-3xl font-bold mb-8">About Me</h2>
       <div className="grid lg:grid-cols-2 gap-8">
