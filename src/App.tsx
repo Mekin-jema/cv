@@ -4,7 +4,6 @@ import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { ProjectsSection } from '@/components/sections/ProjectsSection';
-import { ContactSection } from '@/components/sections/ContactSection';
 import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
@@ -12,6 +11,7 @@ import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
 import MarqueeDemo from './components/sections/MarqueeDemo';
 import AnimatedSection from './components/sections/AnimatedSection';
+import { Contact2 } from './components/sections/ContactSection';
 
 function AppContent() {
   const { theme, setTheme } = useTheme();
@@ -28,7 +28,7 @@ function AppContent() {
     }
 
   // Use IntersectionObserver to detect current active section
-    const sections = ['home', 'about', 'projects', 'blog', 'contact'];
+    const sections = ['hi i\'am', 'about', 'projects', 'experience', 'contact'];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -108,9 +108,9 @@ function AppContent() {
           <MarqueeDemo />
         </AnimatedSection>
      
-        <ContactSection />
+        <Contact2 />
       </main>
-
+       
       <div className="relative z-10">
         <Footer />
       </div>

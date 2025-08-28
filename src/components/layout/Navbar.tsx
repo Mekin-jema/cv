@@ -73,7 +73,7 @@ export function Navbar({ theme, toggleTheme, activeSection, navItems, setActiveS
           <div className="flex items-center gap-3">
             <div className="relative h-9 w-9">
               <OptimizedImage
-                src="./avatar.png"
+                src="./me.png"
                 alt="logo"
                 width={36}
                 height={36}

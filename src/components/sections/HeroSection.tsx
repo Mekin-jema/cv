@@ -15,10 +15,7 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 order-2 md:order-1">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary animate-in fade-in slide-in-from-bottom-4 duration-700">
-                <span className="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                <span className="text-sm font-medium">Hi, I'm</span>
-              </div>
+             
               
               {theme === 'dark' ? (
                 <div className="text-5xl sm:text-6xl lg:text-7xl font-bold">
@@ -76,7 +73,7 @@ export function HeroSection() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse"></div>
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 to-transparent"></div>
               <OptimizedImage 
-                src="/mekin.png" 
+                src="/me.png" 
                 alt="Mekin Jemal" 
                 width={320}
                 height={320}
