@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, RefreshCw, MapPin, Briefcase, Code } from "lucide-react";
+import { Calendar, RefreshCw, MapPin, Briefcase, Code, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 interface Experience {
@@ -18,46 +18,80 @@ interface Experience {
 export default function ExperienceSection() {
   const [experiences, setExperiences] = useState<Experience[]>([]);
   const [loading, setLoading] = useState(true);
+const dummyExperiences: Experience[] = [
+  {
+    title: "Frontend Engineer",
+    company: "Ambalay Maps",
+    location: "Remote / Addis Ababa, Ethiopia",
+    duration: "Jan 2025 – Aug 2025",
+    description:
+      "Built advanced geospatial dashboards with route planning, POI mapping, and VRP optimization. Integrated APIs, led localization (voice support), and delivered scalable features with React, Next.js, TypeScript, Docker, and Vercel.",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Docker",
+      "Vercel",
+      "MapLibre",
+      "OpenMapTiles",
+      "Valhalla",
+    ],
+  },
+  {
+    title: "Youth Advisory Group (YAG) Member – e-SHE Program",
+    company:
+      "Ministry of Education, Mastercard Foundation, Arizona State University, Shayashone PLC, and 50 Universities",
+    location: "Addis Ababa, Ethiopia",
+    duration: "Oct 2024 – Jun 2025",
+    description:
+      "Represented AAU in national education reform. Advocated digital learning adoption, advised policymakers, and contributed to strategies for student-centered engagement.",
+    skills: [
+      "Leadership",
+      "Policy Advisory",
+      "Digital Transformation",
+      "Collaboration",
+    ],
+  },
+  {
+    title: "Member – AAU Robotics Team '5K Bots'",
+    company: "Addis Ababa University AI & Robotics Club",
+    location: "Addis Ababa, Ethiopia",
+    duration: "Sep 2024 – Mar 2025",
+    description:
+      "Designed, built, and programmed robots for VEX V5. Won 1st place at African Robotics Competition and Ethiopian Science Museum event. Gained hands-on robotics and teamwork experience.",
+    skills: [
+      "Robotics",
+      "Mechanical Design",
+      "Embedded Systems",
+      "Problem-Solving",
+    ],
+  },
+  {
+    title: "Web Developer Intern",
+    company: "Ministry of Industry – Ethiopia",
+    location: "Addis Ababa, Ethiopia",
+    duration: "Oct 2024 – Jan 2025",
+    description:
+      "Developed an import management website with HS code tools. Collaborated with audio hardware company and gained insight into manufacturing processes.",
+    skills: ["Web Development", "JavaScript", "Database Integration", "UI/UX"],
+  },
+  {
+    title: "React Module Instructor",
+    company: "Google Developer Group (GDG AAU)",
+    location: "Addis Ababa, Ethiopia (Remote & In-Person)",
+    duration: "Mar 2025 – Jun 2025",
+    description:
+      "Taught React fundamentals (components, hooks, state, APIs) at AAiT Innovation Center. Mentored participants through projects and guided them to build scalable apps.",
+    skills: [
+      "React",
+      "JavaScript",
+      "Teaching",
+      "Mentorship",
+      "State Management",
+    ],
+  },
+];
 
-  // Dummy software engineering experience data
-  const dummyExperiences: Experience[] = [
-    {
-      title: "React Module Instructor & Group Mentor",
-      company: "Google Developer Group (GDG AAU)",
-      location: "Both (remote and in person)",
-      duration: "March 2025 – Present",
-      description:
-        "Mentoring students in the GDG AAU MERN Stack Bootcamp by leading structured exercises, reviewing submissions, and providing personalized guidance. Collaborating with fellow mentors to deliver React.js training sessions, promote engagement, and foster a collaborative learning environment both online and on campus.",
-      skills: ["React", "JavaScript", "Mentorship", "Teaching", "Curriculum Design", "State Management", "API Integration"],
-    },
-    {
-      title: "Frontend Engineer",
-      company: "Ambalay Maps",
-      location: "Remote",
-      duration: "January 2025 – Present",
-      description:
-        "Core contributor to Ambalay Maps, specializing in geospatial web applications. Designed and developed an advanced map dashboard with route planning, geocoding, and traffic analysis. Built tools like customizable markers, POI, distance/time matrix, and VRP-based route optimization. Collaborated with backend teams on production-ready APIs and localization, including voice integration.",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "MapLibre", "OpenMapTiles", "Valhalla", "Docker", "Vercel", "UI/UX Design"],
-    },
-    {
-      title: "Web Developer Intern",
-      company: "Ministry of Industry – Ethiopia",
-      location: "Ethiopia",
-      duration: "October 2024 – January 2025",
-      description:
-        "Contributed to the Ministry’s mission by developing a responsive website showcasing services and strategic goals. Built HS code management and product specification tools, streamlining workflows to support transparent and efficient import regulation.",
-      skills: ["Web Development", "JavaScript", "Responsive Design", "Database Integration", "UI/UX", "Information Architecture"],
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Prodigy InfoTech & Oasis Infobyte",
-      location: "India (Remote)",
-      duration: "May 2024 – June 2024",
-      description:
-        "First internship experience where I contributed to responsive web interfaces using JavaScript, HTML, CSS, and React. Sparked my passion for software engineering and encouraged me to dive deeper into full-stack development.",
-      skills: ["JavaScript", "HTML", "CSS", "React", "Web Design", "Version Control"],
-    },
-  ];
 
   // Simulate API fetch with dummy data
   const fetchExperiences = () => {
@@ -139,9 +173,11 @@ export default function ExperienceSection() {
             </CardContent>
 
             <CardFooter>
-              <Button variant="outline" className="w-full group">
-                Learn More
-                <Code className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button variant="outline" className="w-full group gap-2"> 
+              
+                <Github className="h-4 w-4 " />
+                  Link to Project
+                <Code className="ml-2 h-4 w-4  group-hover:translate-x-1 transition-transform" />
               </Button>
             </CardFooter>
           </Card>

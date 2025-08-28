@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "shadcn/ui",
       "Lucide React"
     ],
-    image: "../ambalay-maps.png",
+    image: "./ambalay-mps.png",
     link: "https://ambalaymaps.com", // replace with actual link
   },
   {
@@ -42,7 +42,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Zod"
     ],
-    image: "../talenthub.png",
+    image: "./talent-hub.png",
     link: "https://talenthub-fawn.vercel.app", // replace if different
   },
   {
@@ -63,6 +63,30 @@ export const projects: Project[] = [
     image: "../food-delivery.png",
     link: "https://chopi-chopi.vercel.app", // replace if different
   },
+    {
+    title: "Workshop Booking System",
+    description:
+      "A full-stack system to manage workshop bookings. Admins can create workshops, add time slots, and monitor bookings via a dashboard with stats and charts. Customers can register, view available workshops, and book specific time slots. The system implements secure JWT authentication, form validation, and clean architecture principles.",
+    tech: [
+      "React.js",
+      "Next.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Material UI (MUI)",
+      "Rechart",
+      "Zod",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "JWT",
+      "Docker",
+      "Jest",
+      "Supertest",
+    ],
+     image:"./workshop.png",
+     link:"https://workshop-booking-customer.vercel.app/"
+  },
   {
     title: "Real Estate App",
     description:
@@ -70,12 +94,14 @@ export const projects: Project[] = [
     tech: [
       "MERN Stack",
       "TypeScript",
-      "Redux Toolkit",
+      "Zustand",
       "JWT",
       "bcrypt.js",
       "Firebase",
       "Tailwind CSS",
-      "Google Auth"
+      "Google Auth",
+      "Zod",
+      "Shadcn/ui",
     ],
     image: "../real-estate.png",
     link: "https://real-estate.vercel.app", // replace with actual
@@ -83,18 +109,18 @@ export const projects: Project[] = [
   {
     title: "IoT Sewage Monitoring System",
     description:
-      "An IoT-based system for monitoring sewage levels and toxic gases. Features real-time dashboards, worker assignment, shortest-path routing, and QR-enabled user feedback. Incorporates machine learning for predictions and spam detection.",
+      "An IoT-based system for monitoring sewage levels and toxic gases. Features real-time dashboards, worker assignment, shortest-path routing, and QR-enabled user feedback. ",
     tech: [
       "Arduino",
-      "ESP8266",
+      "ESP32",
       "MongoDB Atlas",
       "Express.js",
       "React",
       "Tailwind CSS",
-      "shadcn/ui",
-      "Machine Learning"
+      "Shadcn/ui",
+      "Tailwind CSS"
     ],
-    image: "../iot-sewage.png",
+    image: "./smart-drainage.png",
     link: "https://github.com/zestdev/smart-sewage", // replace with actual
   },
 ];
