@@ -8,6 +8,26 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+  title: "Zumer Islamic Media Platform",
+  description:
+    "A comprehensive media platform for Islamic content, featuring live updates, articles, videos, and community engagement. Designed with a focus on accessibility, user experience, and seamless content delivery across devices.",
+  tech: [
+    "Next.js 15",
+    "TypeScript",
+    "Prisma ORM",
+    "Neon",
+    "Zustand",
+    "Better-Auth",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Cloudinary",
+    "Zod"
+  ],
+  image: "./zumer.png",
+  link: "https://www.zumer.media", // replace if different
+},
+
+  {
     title: "Ambalay Maps",
     description:
       "An interactive geospatial dashboard featuring route planning, geocoding, traffic updates, and VRP-based route optimization. Integrated customizable layers and markers using MapLibre, OpenMapTiles, and Valhalla for rendering and routing.",
@@ -45,24 +65,7 @@ export const projects: Project[] = [
     image: "./talent-hub.png",
     link: "https://talenthub-fawn.vercel.app", // replace if different
   },
-  {
-    title: "Food Delivery Platform",
-    description:
-      "A full-stack e-commerce and food delivery platform with store and driver tracking, real-time order updates, advanced search, and payment integration. Built with a focus on scalability and user experience.",
-    tech: [
-      "Next.js 15",
-      "TypeScript",
-      "Prisma ORM",
-      "MongoDB Atlas",
-      "Redux Toolkit",
-      "Socket.IO",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Cloudinary"
-    ],
-    image: "../food-delivery.png",
-    link: "https://chopi-chopi.vercel.app", // replace if different
-  },
+
     {
     title: "Workshop Booking System",
     description:
@@ -103,7 +106,7 @@ export const projects: Project[] = [
       "Zod",
       "Shadcn/ui",
     ],
-    image: "../real-estate.png",
+    image: "./real-esate.png",
     link: "https://real-estate.vercel.app", // replace with actual
   },
   {

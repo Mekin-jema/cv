@@ -1,5 +1,7 @@
 export const techTags = [
-  'React',
-  'Vite',
-  'Typescript'
+  'Next.js',
+
+  'Typescript',
+  `Better-Auth`
+
 ]; 
