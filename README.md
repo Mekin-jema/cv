@@ -39,7 +39,7 @@ Open `src/App.tsx` and update the following parts:
 
 ```typescript
 // Update name
-<span className="text-xl font-bold">Jimmy</span>
+<span className="text-xl font-bold">Mekin jemal</span>
 
 // Update role / title
 <p className="text-xl sm:text-2xl lg:text-3xl">
