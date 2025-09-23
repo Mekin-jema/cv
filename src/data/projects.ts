@@ -7,27 +7,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-  title: "Zumer Islamic Media Platform",
-  description:
-    "A comprehensive media platform for Islamic content, featuring live updates, articles, videos, and community engagement. Designed with a focus on accessibility, user experience, and seamless content delivery across devices.",
-  tech: [
-    "Next.js 15",
-    "TypeScript",
-    "Prisma ORM",
-    "Neon",
-    "Zustand",
-    "Better-Auth",
-    "Tailwind CSS",
-    "shadcn/ui",
-    "Cloudinary",
-    "Zod"
-  ],
-  image: "./zumer.png",
-  link: "https://www.zumer.media", // replace if different
-},
-
-  {
+    {
     title: "Ambalay Maps",
     description:
       "An interactive geospatial dashboard featuring route planning, geocoding, traffic updates, and VRP-based route optimization. Integrated customizable layers and markers using MapLibre, OpenMapTiles, and Valhalla for rendering and routing.",
@@ -47,6 +27,44 @@ export const projects: Project[] = [
     image: "./ambalay-mps.png",
     link: "https://ambalaymaps.com", // replace with actual link
   },
+    {
+    title: "IoT Sewage Monitoring System",
+    description:
+      "An IoT-based system for monitoring sewage levels and toxic gases. Features real-time dashboards, worker assignment, shortest-path routing, and QR-enabled user feedback. ",
+    tech: [
+      "Arduino",
+      "ESP32",
+      "MongoDB Atlas",
+      "Express.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "Tailwind CSS"
+    ],
+    image: "./smart-drainage.png",
+    link: "https://github.com/zestdev/smart-sewage", // replace with actual
+  },
+  {
+  title: "Zumer Islamic Media Platform",
+  description:
+    "A comprehensive media platform for Islamic content, featuring live updates, articles, videos, and community engagement. Designed with a focus on accessibility, user experience, and seamless content delivery across devices.",
+  tech: [
+    "Next.js 15",
+    "TypeScript",
+    "Prisma ORM",
+    "Neon",
+    "Zustand",
+    "Better-Auth",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Cloudinary",
+    "Zod"
+  ],
+  image: "./zumer.png",
+  link: "https://zumer-islamic-media.vercel.app/", // replace if different
+},
+
+
   {
     title: "TalentHub",
     description:
