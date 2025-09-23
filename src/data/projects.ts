@@ -127,21 +127,5 @@ export const projects: Project[] = [
     image: "./real-esate.png",
     link: "https://real-estate.vercel.app", // replace with actual
   },
-  {
-    title: "IoT Sewage Monitoring System",
-    description:
-      "An IoT-based system for monitoring sewage levels and toxic gases. Features real-time dashboards, worker assignment, shortest-path routing, and QR-enabled user feedback. ",
-    tech: [
-      "Arduino",
-      "ESP32",
-      "MongoDB Atlas",
-      "Express.js",
-      "React",
-      "Tailwind CSS",
-      "Shadcn/ui",
-      "Tailwind CSS"
-    ],
-    image: "./smart-drainage.png",
-    link: "https://github.com/zestdev/smart-sewage", // replace with actual
-  },
+
 ];
