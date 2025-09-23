@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "Zod"
     ],
     image: "./talent-hub.png",
-    link: "https://talenthub-fawn.vercel.app", // replace if different
+    link: "https://talent-hub-fawn.vercel.app/", // replace if different
   },
 
     {
