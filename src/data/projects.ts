@@ -44,6 +44,25 @@ export const projects: Project[] = [
     image: "./smart-drainage.png",
     link: "https://github.com/zestdev/smart-sewage", // replace with actual
   },
+    {
+    title: "TalentHub",
+    description:
+      "A multi-role job portal for developers, employers, and admins. Features job postings, applications, dashboards, and real-time notifications with a polished UI and authentication system.",
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "Prisma ORM",
+      "Neon Postgres",
+      "Redux Toolkit",
+      "Socket.IO",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Zod"
+    ],
+    image: "./talent-hub.png",
+    link: "https://talent-hub-fawn.vercel.app/", // replace if different
+  },
+
   {
   title: "Zumer Islamic Media Platform",
   description:
@@ -65,24 +84,6 @@ export const projects: Project[] = [
 },
 
 
-  {
-    title: "TalentHub",
-    description:
-      "A multi-role job portal for developers, employers, and admins. Features job postings, applications, dashboards, and real-time notifications with a polished UI and authentication system.",
-    tech: [
-      "Next.js 15",
-      "TypeScript",
-      "Prisma ORM",
-      "Neon Postgres",
-      "Redux Toolkit",
-      "Socket.IO",
-      "shadcn/ui",
-      "Tailwind CSS",
-      "Zod"
-    ],
-    image: "./talent-hub.png",
-    link: "https://talent-hub-fawn.vercel.app/", // replace if different
-  },
 
     {
     title: "Workshop Booking System",

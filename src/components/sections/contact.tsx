@@ -15,9 +15,9 @@ interface Contact2Props {
 const Contact2 = ({
   title = "Contact Us",
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
-  phone = "(123) 34567890",
-  email = "email@example.com",
-  web = { label: "shadcnblocks.com", url: "https://shadcnblocks.com" },
+  phone = "(+251) 920064543",
+  email = "mekinjemal999@gmail.com",
+  web = { label: "shadcnblocks", url: "https://shadcnblocks.com" },
 }: Contact2Props) => {
   return (
     <section className="py-32">

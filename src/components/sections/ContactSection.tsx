@@ -17,7 +17,7 @@ const Contact2 = ({
   description = "I am available for questions, feedback, or collaboration opportunities. Let me know how I can help!",
   phone = "(+251) 920064543",
   email = "mekinjemal999@gmail.com",
-  web = { label: "https://mekinjemal.com", url: "https://mekinjemal.com" },
+  web = { label: "https://mekinjemal.com", url: "https://mekinjemal2026.vercel.app/" },
 }: Contact2Props) => {
   return (
     <section id="contact" className="py-32 bg-background/80">

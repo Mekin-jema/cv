@@ -9,8 +9,8 @@ import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
-import MarqueeDemo from './components/sections/MarqueeDemo';
-import AnimatedSection from './components/sections/AnimatedSection';
+// import MarqueeDemo from './components/sections/MarqueeDemo';
+// import AnimatedSection from './components/sections/AnimatedSection';
 import { Contact2 } from './components/sections/ContactSection';
 
 function AppContent() {
@@ -103,10 +103,10 @@ function AppContent() {
         <div id="blog">
           <BlogSection />
         </div>
-        <AnimatedSection>
+        {/* <AnimatedSection>
 
           <MarqueeDemo />
-        </AnimatedSection>
+        </AnimatedSection> */}
      
         <Contact2 />
       </main>
