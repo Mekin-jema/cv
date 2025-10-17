@@ -42,7 +42,7 @@ export const projects: Project[] = [
       "Tailwind CSS"
     ],
     image: "./smart-drainage.png",
-    link: "https://github.com/zestdev/smart-sewage", // replace with actual
+    link: "https://final-project-wz7h.onrender.com/", // replace with actual
   },
     {
     title: "TalentHub",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "Zod"
     ],
     image: "./talent-hub.png",
-    link: "https://talent-hub-fawn.vercel.app/", // replace if different
+    link: "https://talent-hub-git-main-mekin-jemals-projects.vercel.app/", // replace if different
   },
 
   {
