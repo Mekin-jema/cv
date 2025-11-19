@@ -10,6 +10,6 @@ export const navItems: NavItem[] = [
   { id: 'home', label: 'hi I\'m', icon: Globe },
   { id: 'about', label: 'About', icon: Code2 },
   { id: 'projects', label: 'Projects', icon: Award },
-  { id: 'blog', label: 'Blog', icon: BookOpen },
+  // { id: 'blog', label: 'Blog', icon: BookOpen },
   { id: 'contact', label: 'Contact', icon: MessageSquare },
 ]; 

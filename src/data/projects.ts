@@ -7,6 +7,29 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+  title: "Power Ethiopia",
+  description:
+    "A modern, corporate WordPress website built with Elementor, showcasing Power Ethiopia’s services, projects, and renewable energy initiatives. Includes dynamic sliders, service sections, blog integration, and a fully responsive design tailored for clean energy innovation.",
+   tech: [
+    "WordPress",
+    "Elementor",
+    "Elementor Pro",
+    "Depicter Slider",
+    "Post Grid",
+    "Advanced Custom Fields (ACF)",
+    "JetEngine",
+    "UpdraftPlus",
+    "Yoast SEO",
+    "PHP",
+    "JavaScript",
+    "CSS",
+    "HTML5"
+  ],
+  image: "./power-ethiopia.png",
+  link: "https://powerethiopia.com/"
+},
+
     {
     title: "Ambalay Maps",
     description:
