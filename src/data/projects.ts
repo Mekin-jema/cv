@@ -132,24 +132,24 @@ export const projects: Project[] = [
      image:"./workshop.png",
      link:"https://workshop-booking-customer.vercel.app/"
   },
-  {
-    title: "Real Estate App",
-    description:
-      "A real estate platform with advanced search, JWT authentication, Google OAuth, and Firebase image uploads. Includes responsive design, secure user authentication, and modern UI components.",
-    tech: [
-      "MERN Stack",
-      "TypeScript",
-      "Zustand",
-      "JWT",
-      "bcrypt.js",
-      "Firebase",
-      "Tailwind CSS",
-      "Google Auth",
-      "Zod",
-      "Shadcn/ui",
-    ],
-    image: "./real-esate.png",
-    link: "https://real-estate.vercel.app", // replace with actual
-  },
+  // {
+  //   title: "Real Estate App",
+  //   description:
+  //     "A real estate platform with advanced search, JWT authentication, Google OAuth, and Firebase image uploads. Includes responsive design, secure user authentication, and modern UI components.",
+  //   tech: [
+  //     "MERN Stack",
+  //     "TypeScript",
+  //     "Zustand",
+  //     "JWT",
+  //     "bcrypt.js",
+  //     "Firebase",
+  //     "Tailwind CSS",
+  //     "Google Auth",
+  //     "Zod",
+  //     "Shadcn/ui",
+  //   ],
+  //   image: "./real-esate.png",
+  //   link: "https://real-estate.vercel.app", // replace with actual
+  // },
 
 ];
