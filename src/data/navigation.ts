@@ -1,4 +1,4 @@
-import { Globe, Code2, Award, MessageSquare} from 'lucide-react';
+import { Globe, Briefcase, Award, MessageSquare } from 'lucide-react';
 
 export interface NavItem {
   id: string;
@@ -7,9 +7,8 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { id: 'home', label: 'hi I\'m', icon: Globe },
-  { id: 'about', label: 'About', icon: Code2 },
+  { id: 'home', label: 'Home', icon: Globe },
+  { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'projects', label: 'Projects', icon: Award },
-  // { id: 'blog', label: 'Blog', icon: BookOpen },
   { id: 'contact', label: 'Contact', icon: MessageSquare },
-]; 
+];

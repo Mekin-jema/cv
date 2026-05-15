@@ -1,16 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { HeroSection } from '@/components/sections/HeroSection';
-import { AboutSection } from '@/components/sections/AboutSection';
+import { ProfessionalHeader } from '@/components/sections/ProfessionalHeader';
+import { ExperienceTimelineSection } from '@/components/sections/ExperienceTimelineSection';
 import { ProjectsSection } from '@/components/sections/ProjectsSection';
-import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
-// import MarqueeDemo from './components/sections/MarqueeDemo';
-// import AnimatedSection from './components/sections/AnimatedSection';
 import { Contact2 } from './components/sections/ContactSection';
 
 function AppContent() {
@@ -28,7 +25,7 @@ function AppContent() {
     }
 
   // Use IntersectionObserver to detect current active section
-    const sections = ['hi i\'am', 'about', 'projects', 'experience', 'contact'];
+    const sections = ['home', 'experience', 'projects', 'contact'];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -77,13 +74,13 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-background/50 text-foreground transition-colors max-w-[2000] mx-auto duration-300 relative">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300 relative">
       <Squares 
-        speed={0.3} 
-        squareSize={40}
+        speed={0.2} 
+        squareSize={50}
         direction='diagonal'
-        borderColor={theme === 'dark' ? '#fff' : '#000'}
-        hoverFillColor={theme === 'dark' ? '#222' : '#eee'}
+        borderColor={theme === 'dark' ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.03)'}
+        hoverFillColor={theme === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.02)'}
       />
       
       <Navbar 
@@ -94,20 +91,10 @@ function AppContent() {
         setActiveSection={setActiveSection}
       />
 
-      <main ref={mainRef} className="container mx-auto px-4 pt-8 md:pt-24 pb-8 md:pb-4 space-y-16 md:space-y-24 relative z-10">
-        <div className="relative min-h-[80vh] w-full">
-          <HeroSection />
-        </div>
-        <AboutSection />
+      <main ref={mainRef} className="relative z-10">
+        <ProfessionalHeader />
+        <ExperienceTimelineSection />
         <ProjectsSection />
-        <div id="blog">
-          <BlogSection />
-        </div>
-        {/* <AnimatedSection>
-
-          <MarqueeDemo />
-        </AnimatedSection> */}
-     
         <Contact2 />
       </main>
        

@@ -1,6 +1,5 @@
 export const heroContent = {
-  title: 'Mekin',
-  subtitle: 'Full-Stack Engineer',
-  description: `Focused on crafting outstanding digital experiences, building scalable and user-friendly applications with modern web technologies.
-With extensive full‑stack development experience, I’m committed to creating great user experiences and high-performance technical solutions.`
-}; 
+  title: 'Mekin Jemal',
+  subtitle: 'Software Engineer at Safaricom Ethiopia | DevOps Engineer | Full-Stack Developer',
+  description: `Software Engineer at Safaricom Ethiopia | DevOps Engineer | CI/CD | Jenkins | Docker | Kubernetes | AWS | Full-Stack Developer (MERN, Next.js). I am experienced in building scalable applications with a focus on full-stack development, modern frameworks, and databases. I apply DevOps practices to streamline workflows and have experience in automation testing (Playwright, Robot Framework) and GIS technologies. I am dedicated to writing clean code, continuously learning, and solving real-world problems.`
+};
