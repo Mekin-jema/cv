@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon,Zap, Layers, Map } from "lucide-react";
+import { HomeIcon,Zap} from "lucide-react";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
@@ -76,7 +76,7 @@ export const DATA = {
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
 
   contact: {
@@ -85,31 +85,31 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/yourusername",
+        url: "https://github.com/Mekin-jema",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/yourprofile",
+        url: "https://www.linkedin.com/in/mekin-jemal/",
         icon: Icons.linkedin,
         navbar: true,
       },
 
       X: {
         name: "X",
-        url: "https://x.com/yourusername",
+        url: "https://x.com/Mekin_Jemal",
         icon: Icons.x,
         navbar: true,
       },
 
-      Youtube: {
-        name: "Youtube",
-        url: "https://youtube.com/@yourchannel",
-        icon: Icons.youtube,
-        navbar: true,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://youtube.com/@yourchannel",
+      //   icon: Icons.youtube,
+      //   navbar: true,
+      // },
 
       email: {
         name: "Send Email",
@@ -220,11 +220,72 @@ export const DATA = {
     testing: ["Jest", "Supertest", "Cypress", "Postman"],
     gis: ["MapLibre", "OpenMapTiles", "Valhalla"],
   },
-
+  
   projects: [
     {
+      title: "Fullstack Todo App Deployment",
+      href: "https://github.com/Mekin-jema/devops-k8s-pipeline",
+      dates: "2026",
+      active: true,
+      description:
+        "Built and documented a full-stack Todo application deployment pipeline with Next.js, Express.js, MongoDB, Docker, Jenkins, and Kubernetes for automated build and rollout.",
+      technologies: [
+        "Next.js",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Jenkins",
+        "Kubernetes",
+        "AWS",
+      ],
+      links: [],
+      image: "todo.png",
+      video: "",
+    },
+        {
+      title: "Platform Automation (Playwright)",
+      href: "https://github.com/Mekin-jema/end_to_end_automation",
+      dates: "2026",
+      active: true,
+      description:
+        "Advanced Playwright-based E2E automation suite with Allure reporting, structured test suites, and Jenkins CI via Docker.",
+      technologies: [
+        "Playwright Test",
+        "TypeScript",
+        "Allure Report",
+        "Docker",
+        "Jenkins",
+        "kubernetes",
+        "Gitlab"
+      ],
+      links: [],
+      image: "playwright.png",
+      video: "",
+    },
+    {
+      title: "EIC Frontend",
+      href: "https://github.com/Mekin-jema/eic-frontend",
+      dates: "2026",
+      active: true,
+      description:
+        "Public-facing event and registration frontend for Invest in Ethiopia, featuring a motion-rich landing page, a three-step attendee registration flow, multipart form submission, and success page handling.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Framer Motion",
+        "React Hook Form",
+        "Zod",
+        "RTK Query",
+      ],
+      links: [],
+      image: "eic.png",
+      video: "",
+    },
+    {
       title: "IoT Smart Sewage Monitoring System",
-      href: "#",
+      href: "https://github.com/Mekin-jema/SmartDrainage-Monitering-System",
       dates: "2025",
       active: true,
       description:
@@ -238,43 +299,53 @@ export const DATA = {
         "TailwindCSS",
       ],
       links: [],
-      image: "",
+      image: "iot.png",
       video: "",
     },
+
     {
-      title: "Learning Management System",
-      href: "#",
-      dates: "2025",
+      title: "TalentHub",
+      href: "https://github.com/Mekin-jema/talent-hub",
+      dates: "2026",
       active: true,
       description:
-        "Developed a scalable MERN LMS platform with authentication, course management, notifications, Redis caching, and admin dashboard.",
+        "Comprehensive job board API connecting developers with employers, featuring JWT authentication, job management, application workflows, notifications, pagination, and WebSocket events.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "MongoDB",
-        "Redis",
-        "TailwindCSS",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma ORM",
+        "JWT",
+        "WebSocket",
+        "Docker",
+        "Render",
       ],
       links: [],
-      image: "",
+      image: "talent_hub.png",
       video: "",
     },
     {
-      title: "MERN Real Estate App",
-      href: "#",
-      dates: "2024",
+      title: "MyMap",
+      href: "https://github.com/Mekin-jema/Ambalay-Maps-v2",
+      dates: "2026",
       active: true,
       description:
-        "Built a real estate platform with JWT authentication, Firebase image upload, Redux Toolkit, and advanced search functionality.",
+        "Feature-rich interactive mapping application built with Next.js, TypeScript, MapLibre GL JS, and Redux Toolkit. Includes multi-waypoint routing, POI discovery, elevation profiling, dynamic map styles, geolocation tracking, and responsive UI enhancements.",
       technologies: [
-        "React",
-        "Express",
-        "MongoDB",
-        "Firebase",
+        "Next.js",
+        "TypeScript",
+        "MapLibre GL JS",
         "Redux Toolkit",
+        "Framer Motion",
+        "Valhalla",
+        "OSRM",
+        "Geoapify",
+  
       ],
       links: [],
-      image: "",
+      image: "myMap.png",
       video: "",
     },
   ],
