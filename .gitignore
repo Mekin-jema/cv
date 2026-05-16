@@ -48,3 +48,6 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+
+mekin_cv.pem
