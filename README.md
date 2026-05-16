@@ -1,227 +1,47 @@
-# Personal Portfolio Website
+<div align="center">
+<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
+</div>
 
-This is a modern personal portfolio website built with React, TypeScript, and Tailwind CSS.
+# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
 
-## Features
+Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
-- 🎨 Modern design
-- 🌓 Dark / Light theme
-- 📱 Fully responsive
-- ⚡ Performance optimized
-- 🎯 SEO friendly
+# Features
 
-## Getting Started
+- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
+- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
+- Includes a blog
+- Responsive for different devices
+- Optimized for Next.js and Vercel
 
-1. Clone the project and run:
+# Getting Started Locally
 
-```bash
-npm install
-npm run dev
-```
+1. Clone this repository to your local machine:
 
-2. Open your browser at `http://localhost:5173`
+   ```bash
+   git clone https://github.com/dillionverma/portfolio
+   ```
 
-## Project Structure
+2. Move to the cloned directory
 
-```
-src/
-├── components/    # UI components
-├── lib/           # Utility functions
-├── hooks/         # React hooks
-└── App.tsx        # Root application component
-```
+   ```bash
+   cd portfolio
+   ```
 
-## Common Modification Guide
+3. Install dependencies:
 
-### 1. Update Personal Info
+   ```bash
+   pnpm install
+   ```
 
-Open `src/App.tsx` and update the following parts:
+4. Start the local Server:
 
-```typescript
-// Update name
-<span className="text-xl font-bold">Mekin jemal</span>
+   ```bash
+   pnpm dev
+   ```
 
-// Update role / title
-<p className="text-xl sm:text-2xl lg:text-3xl">
-  Full-Stack Engineer & UI/UX Designer
-</p>
-```
+5. Open the [Config file](./src/data/resume.tsx) and make changes
 
-### 2. Add a New Project
+# License
 
-Add a new item to the `projects` array:
-
-```typescript
-{
-  title: 'Project Name',
-  description: 'Project description',
-  tech: ['Tech 1', 'Tech 2'],
-  image: 'Project image URL'
-}
-```
-
-### 3. Update Skills
-
-Modify the skills array:
-
-```typescript
-[
-  { name: 'Skill name', level: 95 },
-  // Add more skills
-]
-```
-
-### 4. Add Work Experience
-
-Add to the work experience array:
-
-```typescript
-{
-  company: 'Company Name',
-  position: 'Position',
-  period: 'Time Range',
-  description: 'Role description'
-}
-```
-
-## Database Integration Plan
-
-To add database support, you can use Supabase for the following features:
-
-1. Project Showcase
-
-```sql
-CREATE TABLE projects (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  title TEXT NOT NULL,
-  description TEXT,
-  image_url TEXT,
-  technologies TEXT[],
-  created_at TIMESTAMPTZ DEFAULT now(),
-  updated_at TIMESTAMPTZ DEFAULT now()
-);
-```
-
-2. Work Experience
-
-```sql
-CREATE TABLE experience (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  company TEXT NOT NULL,
-  position TEXT NOT NULL,
-  period TEXT,
-  description TEXT,
-  type TEXT CHECK (type IN ('work', 'education')),
-  created_at TIMESTAMPTZ DEFAULT now()
-);
-```
-
-3. Skill Evaluation
-
-```sql
-CREATE TABLE skills (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  name TEXT NOT NULL,
-  level INTEGER CHECK (level BETWEEN 0 AND 100),
-  category TEXT,
-  created_at TIMESTAMPTZ DEFAULT now()
-);
-```
-
-### Integration Steps
-
-1. Click the "Connect to Supabase" button (or create a project in the Supabase dashboard)
-2. Install dependency:
-
-```json
-{
-  "dependencies": {
-    "@supabase/supabase-js": "latest"
-  }
-}
-```
-
-3. Create the Supabase client:
-
-```typescript
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
-```
-
-4. Create a data-fetching hook:
-
-```typescript
-function useProjects() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    async function fetchProjects() {
-      const { data } = await supabase
-        .from('projects')
-        .select('*')
-        .order('created_at', { ascending: false });
-      setProjects(data);
-    }
-    fetchProjects();
-  }, []);
-
-  return projects;
-}
-```
-
-5. Use in a component:
-
-```typescript
-function ProjectsSection() {
-  const projects = useProjects();
-  
-  return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {projects.map(project => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
-    </div>
-  );
-}
-```
-
-## Performance Optimization Tips
-
-1. Image Optimization
-
-- Use appropriate image sizes
-- Add loading="lazy"
-- Consider WebP format
-
-2. Component Optimization
-
-- Use React.memo() to reduce unnecessary re-renders
-- Implement virtual scrolling for large lists
-
-3. Build Optimization
-
-- Enable code splitting
-- Optimize dependency size
-- Use Lighthouse to monitor performance
-
-## Deployment
-
-You can deploy the project to Netlify (or Vercel):
-
-1. Commit your code
-2. Connect the repository in the hosting platform
-3. Configure environment variables if needed
-4. Deploy
-
-## Support
-
-If you need help:
-
-1. Review component documentation
-2. Reference Tailwind CSS docs
-3. Check the official React docs
-# about
+Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
