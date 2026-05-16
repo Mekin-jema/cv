@@ -28,7 +28,7 @@ export const DATA = {
   location: "Addis Ababa, Ethiopia",
   locationLink: "https://www.google.com/maps/place/addis+ababa",
   description:
-    "Software Engineer | DevOps Engineer | Full Stack Developer | IoT Enthusiast",
+    "Software Engineer at Safaricom | DevOps Engineer | Full Stack Developer",
 
   summary:
     "Computer Engineering graduate from Addis Ababa University with strong experience in Full Stack Development, DevOps, Cloud, QA Automation, and IoT systems. Passionate about solving real-world problems through scalable software, smart systems, and cloud technologies.",
