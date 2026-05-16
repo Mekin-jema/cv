@@ -357,17 +357,9 @@ export const DATA = {
       location: "Africa",
       description:
         "Won 1st place in African Robotics Competition with AAU Robotics Team (5K Bots), earning scholarship opportunity to Texas, USA.",
-      image: "/robotics.png",
+      image: "ethio_robotics.png",
       links: [],
     },
-    {
-      title: "Ethiopian Science Museum Robotics Event",
-      dates: "2025",
-      location: "Addis Ababa, Ethiopia",
-      description:
-        "Participated and won a 3-day robotics competition focused on innovation, robotics design, and coding challenges.",
-      image: "/science-museum.png",
-      links: [],
-    },
+
   ],
 } as const;
