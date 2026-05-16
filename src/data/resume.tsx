@@ -1,16 +1,25 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
+import { HomeIcon, NotebookIcon,Zap, Layers, Map } from "lucide-react";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
+
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
+
+import { Prisma } from "@/components/ui/svgs/prisma";
+import { Shadcn } from "@/components/ui/svgs/shadcn";
+import { Magic } from "@/components/ui/svgs/magic";
+import { Expressjs } from "@/components/ui/svgs/express";
+import { SocketIO } from "@/components/ui/svgs/socketio";
+import { MongoDB } from "@/components/ui/svgs/mongodb";
+import { Redis } from "@/components/ui/svgs/redis";
+import { Postman } from "@/components/ui/svgs/postman";
+import { Figma } from "@/components/ui/svgs/figma";
+import { Playwright } from "@/components/ui/svgs/playwright";
+import { ReactLight } from "@/components/ui/svgs/reactLight";
 
 export const DATA = {
   name: "Mekin Jemal",
@@ -27,17 +36,42 @@ export const DATA = {
   avatarUrl: "/me.png",
 
   skills: [
+    // Frontend
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
+    { name: "TypeScript", icon: Typescript },
+    { name: "Tailwind CSS", icon: Icons.tailwindcss },
+    { name: "Shadcn/ui", icon: Shadcn },
+    { name: "Magic UI", icon: Magic },
+
+    // Backend
     { name: "Node.js", icon: Nodejs },
-    { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
+    { name: "Express", icon: Expressjs },
+    { name: "Prisma", icon: Prisma },
+    { name: "Socket.IO", icon: SocketIO },
+
+    // Databases
+    { name: "PostgreSQL", icon: Postgresql },
+    { name: "MongoDB", icon: MongoDB },
+    { name: "Redis", icon: Redis },
+
+    // DevOps & Tools
     { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "GitHub Actions", icon: Icons.github },
+    { name: "Jenkins", icon: Zap },
+
+    // Testing
+    { name:"Playwright", icon: Playwright },
+    { name: "Postman", icon: Postman },
+
+
+
+
+    // Other languages
+   {name:"Figma", icon: Figma }, 
+    { name: "Python", icon: Python },
+
   ],
 
   navbar: [
@@ -85,6 +119,16 @@ export const DATA = {
       },
     },
   },
+
+  // Quick public links
+  portfolio: "https://yourwebsite.com",
+  connect: [
+    { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile" },
+    { name: "Gmail", url: "mailto:mekinjemal999@gmail.com" },
+    { name: "Twitter", url: "https://x.com/yourusername" },
+    { name: "Instagram", url: "https://instagram.com/yourusername" },
+    { name: "BuyMeACoffee", url: "https://buymeacoffee.com/yourusername" },
+  ],
 
   work: [
     {
@@ -159,6 +203,23 @@ export const DATA = {
       end: "2025",
     },
   ],
+
+  // Tech stack / focus areas
+  techStack: {
+    frontend: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "Magic UI",
+    ],
+    backend: ["Node.js", "Express", "Prisma", "Socket.IO"],
+    databases: ["MongoDB", "PostgreSQL", "Redis", "Prisma ORM"],
+    devops: ["Docker", "Kubernetes", "GitHub Actions", "Jenkins"],
+    testing: ["Jest", "Supertest", "Cypress", "Postman"],
+    gis: ["MapLibre", "OpenMapTiles", "Valhalla"],
+  },
 
   projects: [
     {
